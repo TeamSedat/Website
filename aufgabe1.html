@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sedat's Website</title>
+<meta charset = "utf-8"/>
+<style>
+.myDiv {
+  border: 5px outset black;
+  background-color: gray;    
+  text-align: center;
+}
+
+p a  {color: black; }
+
+nav a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+nav a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;http://localhost/aufgabe2.html
+}
+
+
+
+body {
+  background-image: url('Fladen.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  color:black;
+}
+
+table {
+  width:50%;
+}
+table, th, td {
+  border: 5px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t01 th {
+  background-color: gray;
+  color: black;}
+  
+  nav { background-color:gray; 
+
+margin-top:80 px;  }
+  
+  nav a { padding: 15px; }
+  
+  .circleimage  {
+  border-radius: 50%; 
+  filter: grayscale(100%);
+}
+
+logo {
+  background-image: url("logo.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: fixed;
+
+
+
+  
+</style>
+</head>
+<body>
+
+<img class="logo" src="logo.png" alt="HTML5 Icon;" style="width:150px;height:150px;"/>
+
+  <script>
+var myVar = setInterval(myTimer, 1000);
+function myTimer() {
+  var d = new Date();
+  document.getElementById("Uhrzeit").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
+
+<div class="myDiv">
+  <h1>Rezept für ein Türkisches Fladenbrot</h1>
+  <div style="color:hsl(128, 100%, 85%)"> <span id="Uhrzeit" /></div>
+</div>
+
+<!--
+<p><a href="#Zutaten">Zutaten</a></p>
+<p><a href="#Zubereitung">Zubereitung</a></p>
+<p><a href="#Bilder">Bilder</a></p>-->
+
+<div class="myDiv">
+<nav>
+<a href="#Zutaten">Zutaten</a> |
+<a href="#Zubereitung">Zubereitung</a> |
+<a href="#Bilder">Bilder</a> 
+
+</nav>
+</div>
+
+<h2 id="Zutaten"></h2>
+<ul style="padding-left: 350px">
+<table id="t01">
+<tr>
+<th>Zutaten</th>
+</table>
+<br>
+<br>
+<br>
+<table id="t01">
+<tr>
+<th>Menge</th>
+<th>Zutat</th>    
+</tr>
+<tr>
+<td>500 g</td>
+<td>Weizenmehl Type 550</td>
+</tr>
+<tr>
+<td>10 g</td>
+<td>Salz</td>  
+</tr>
+<tr>
+<td>10 g</td>
+<td>Olivenöl</td>   
+</tr>
+<tr>
+<td>7 ½ g</td>
+<td>Zucker</td>   
+</tr>
+<tr>
+<td>½ Würfel</td>
+<td>Hefe</td> 
+</tr> 
+<tr>
+<td>360 ml</td>
+<td>Wasser</td    
+</tr> 
+</table>
+</ul>
+<br>
+<br>
+<br>
+<ul style="padding-left: 350px">
+<table id="t01">
+<tr>
+<th>Ausserdem</th>   
+</tr>
+<tr>
+<td>1 Ei mit Wasser gemischt</td>   
+</tr>
+<tr>
+<td>n.b Sesam oder Schwarzkümmel</td>   
+</tr>  
+</table>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 id="Zubereitung"></h2>
+<b>
+<div style =  "background-color: hsla(0, 100%, 100%,0.75); padding: 25px">   
+<div class= "zubereitung">  
+<h2><p style="text-align:center">Zubereitung</h2>
+<p>Diese Zutaten zusammen zu einem sehr weichen Hefeteig verarbeiten und ca. 8 Minuten kneten. In einer leicht geölten Schüssel ca. 1,5 h gehen lassen.</p>
+<p>Den Teig danach auf eine bemehlte Arbeitsfläche kippen und in jeweils ca. 400 g schwere Portionen teilen (bei dieser Zutatenmenge einfach halbieren).</p>
+<p>Vorsichtig die Teiglinge in eine einigermaßen ovale Form bringen OHNE zuviel Gas aus den Teiglingen auszutreiben.</p> 
+<p>Bedeckt 20 Minuten ruhen lassen. </p>
+<p>un jeweils jeden Teigling wie gewünscht in eine längliche oder ovale Form bringen und auf ein mit Backpapier ausgelegtes Backblech legen.</p> 
+<p>Teigling kann ruhig fast die ganze Breite des Bleches füllen.</p> 
+<p>Die Laibe mit einem Wasser-Ei-Gemisch bestreichen.</p> 
+<p>Jetzt mit den Fingerspitzen tief eindrücken (bis fast kleine Löcher entstehen) und nach Bedarf mit Sesam oder Schwarzkümmel bestreuen.</p> 
+<p> Noch einmal 20 Minuten ruhen lassen. In den auf 250 °C vorgeheizten Backofen schieben und ca. 7 - 9 Minuten backen.
+<p>Vorsicht, nicht zu lange backen, da das Brot sonst seine charakteristische Krumeneigenschaft verliert! </p>
+</div>
+
+</b>
+<h2 id="Bilder"></h2>
+<h1>Bilder</h1>
+<h3>auf Sesam druecken oder weizen dann öffnet sich ein neues Bild!!!!</h3>
+<img src="fladenbrot.jpg" alt="Fladenbrot" usemap="#Fladenbrot" width="400" height="379">
+<map name="Fladenbrot">
+  <area shape="circle" coords="100,70,50,40" alt="Sesam" href="mehl.jpg">
+  <area shape="circle" coords="350,150,50,50" alt="Mehl" href="sesam.jpg">
+</map>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<img class="circleimage" src="bild3.jpg" alt="Fladen" width="300" height="300">
+
+<br>
+<br>
+<br>
+<br>
+<h2> Laugenstangen-selbst-gemacht </h2>
+<a href="https://www.chefkoch.de/rezepte/1290581234390327/Laugenstangen-selbst-gemacht.html"><img src="laugenstangen-selbst-gemacht.jpg" alt="Laugenstangen-selbst-gemacht" width="100" height="100" /></a>
+
+<p id="demo"></p>
+<h2>Quellen</h2>
+<p><a href="aufgabe2.html" target="_blank">Link</a></p>
+</div>
+</body>
+</html>
+
