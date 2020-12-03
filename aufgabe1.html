@@ -31,7 +31,6 @@
       color: yellow;
       background-color: transparent;
       text-decoration: underline;
-      http: //localhost/aufgabe2.html
     }
 
 
@@ -94,13 +93,20 @@
       background-repeat: no-repeat;
       background-position: right top;
       margin-right: 200px;
+      width: 150px;
+      height: 150px;
       background-attachment: fixed;
+    }
+
+    h1 {
+      text-shadow: 2px 2px 5px black;
+    }
   </style>
 </head>
 
 <body>
 
-  <img class="logo" src="logo.png" alt="HTML5 Icon;" style="width:150px;height:150px;" />
+  <img class="logo" src="logo.png" alt="HTML5 Icon;" />
 
   <script>
     var myVar = setInterval(myTimer, 1000);
@@ -113,7 +119,7 @@
 
   <div class="myDiv">
     <h1>Rezept für ein Türkisches Fladenbrot</h1>
-    <div style="color:hsl(128, 100%, 85%)"> <span id="Uhrzeit" /></div>
+    <div style="color:hsl(128, 100%, 85%)"> <span id="Uhrzeit"></div>
   </div>
 
   <!--
@@ -125,8 +131,7 @@
     <nav>
       <a href="#Zutaten">Zutaten</a> |
       <a href="#Zubereitung">Zubereitung</a> |
-      <a href="#Bilder">Bilder</a>
-
+      <a href="#Bilder">Bilder</a>|
     </nav>
   </div>
 
