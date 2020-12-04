@@ -22,7 +22,7 @@
     }
 
     nav a:hover {
-      color: red;
+      color: black;
       background-color: transparent;
       text-decoration: underline;
     }
@@ -108,11 +108,18 @@
       width: 250px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       text-align: center;
-      image-orientation: flip;
+
     }
 
     div.container {
       padding: 10px;
+    }
+
+    .img150 {
+      float: left;
+      width: 150px;
+      padding: 3px;
+      font-size: 0.7em;
     }
   </style>
 </head>
@@ -152,7 +159,9 @@
   <ul style="padding-left: 350px">
     <table id="t01">
       <tr>
-        <th>Zutaten</th>
+        <th>
+          <h2>Zutaten</h2>
+        </th>
     </table>
     <br>
     <br>
@@ -232,7 +241,9 @@
         <p> Noch einmal 20 Minuten ruhen lassen. In den auf 250 °C vorgeheizten Backofen schieben und ca. 7 - 9 Minuten
           backen.
         <p>Vorsicht, nicht zu lange backen, da das Brot sonst seine charakteristische Krumeneigenschaft verliert! </p>
-
+        /div>
+        </p>
+      </div>
 
   </b>
   <h2 id="Bilder"></h2>
@@ -265,15 +276,30 @@
 
   <div class="polaroid">
     <img src="Fladen.jpg" alt="Fladen" style="width:100%">
-    <div class="container">
-      <p>Fladenbrot</p>;
+    <p>Fladenbrot123</p>
+  </div>
+  <div class="polaroid">
+    <img src="bild4.jpg" alt="Fladen" style="width:100%">
+    <p>Fladenbrot</p>
+  </div>
 
-      <div class="polaroid">
-        <img src="bild4.jpg" alt="Fladen" style="width:100%">
-        <div class="container">
-          <p>Fladenbrot</p>
 
-        </div>
+  <div class="img150">
+    <img src="bild5.jpg" width="150" height="150" border="0" alt="Rose 1">
+    Bilduntertext zur Rose 1
+  </div>
+
+  <div class="img150">
+    <img src="bild3.jpg" width="150" height="150" border="0" alt="Rose 1">
+    Bilduntertext zur Rose 2 und Zusatztext zur Rose 2
+  </div>
+
+  <div class="img150">
+    <img src="bild6.jpg" width="150" height="150" border="0" alt="Rose 1">
+    Bilduntertext zur Rose 3
+
+
+  </div>
 </body>
 
 </html>
