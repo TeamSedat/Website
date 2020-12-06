@@ -4,7 +4,17 @@
 <head>
   <title>Sedat's Website</title>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
+    b header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
     .myDiv {
       border: 5px outset black;
       background-color: gray;
@@ -19,6 +29,10 @@
       color: white;
       background-color: transparent;
       text-decoration: none;
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     nav a:hover {
@@ -41,6 +55,7 @@
       background-attachment: fixed;
       background-size: 100% 100%;
       color: black;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     table {
@@ -74,8 +89,12 @@
     }
 
     nav {
-      background-color: gray;
-
+      float: left;
+      width: 20%;
+      height: 100px;
+      /* only for demonstration, should be removed */
+      background: gray;
+      padding: 20px;
       margin-top: 80 px;
     }
 
@@ -120,6 +139,24 @@
       width: 150px;
       padding: 3px;
       font-size: 0.7em;
+
+
+    }
+
+    @media (max-width: 600px) {
+      section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+    }
+
+    aside {
+      width: 30%;
+      padding-left: 15px;
+      margin-left: 15px;
+      float: right;
+      font-style: italic;
+      background-color: lightgray;
     }
   </style>
 </head>
@@ -149,9 +186,9 @@
 
   <div class="myDiv">
     <nav>
-      <a href="#Zutaten">Zutaten</a> |
-      <a href="#Zubereitung">Zubereitung</a> |
-      <a href="#Bilder">Bilder</a>|
+      <a href="#Zutaten">Zutaten</a>
+      <a href="#Zubereitung">Zubereitung</a>
+      <a href="#Bilder">Bilder</a>
     </nav>
   </div>
 
@@ -228,7 +265,7 @@
         <p>Diese Zutaten zusammen zu einem sehr weichen Hefeteig verarbeiten und ca. 8 Minuten kneten. In einer leicht
           geölten Schüssel ca. 1,5 h gehen lassen.</p>
         <p>Den Teig danach auf eine bemehlte Arbeitsfläche kippen und in jeweils ca. 400 g schwere Portionen teilen (bei
-          dieser Zutatenmenge einfach halbieren).</p>
+          dieser Zutatenmenge einfach halbieren)</p>
         <p>Vorsichtig die Teiglinge in eine einigermaßen ovale Form bringen OHNE zuviel Gas aus den Teiglingen
           auszutreiben.</p>
         <p>Bedeckt 20 Minuten ruhen lassen. </p>
@@ -241,7 +278,7 @@
         <p> Noch einmal 20 Minuten ruhen lassen. In den auf 250 °C vorgeheizten Backofen schieben und ca. 7 - 9 Minuten
           backen.
         <p>Vorsicht, nicht zu lange backen, da das Brot sonst seine charakteristische Krumeneigenschaft verliert! </p>
-        /div>
+
         </p>
       </div>
 
@@ -274,32 +311,20 @@
   <p><a href="aufgabe2.html" target="_blank">Link</a></p>
 
 
-  <div class="polaroid">
+  <div class="polaroid , img150">
     <img src="Fladen.jpg" alt="Fladen" style="width:100%">
     <p>Fladenbrot123</p>
   </div>
-  <div class="polaroid">
+  <div class="polaroid , img150">
     <img src="bild4.jpg" alt="Fladen" style="width:100%">
     <p>Fladenbrot</p>
-  </div>
-
-
-  <div class="img150">
-    <img src="bild5.jpg" width="150" height="150" border="0" alt="Rose 1">
-    Bilduntertext zur Rose 1
-  </div>
-
-  <div class="img150">
-    <img src="bild3.jpg" width="150" height="150" border="0" alt="Rose 1">
-    Bilduntertext zur Rose 2 und Zusatztext zur Rose 2
-  </div>
-
-  <div class="img150">
-    <img src="bild6.jpg" width="150" height="150" border="0" alt="Rose 1">
-    Bilduntertext zur Rose 3
-
 
   </div>
+
+
+
+
+
 </body>
 
 </html>
