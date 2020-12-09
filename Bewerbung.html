@@ -3,16 +3,65 @@
 
 <head>
 
-  <title> Navigations Bar With Image Header </title>
+  <title> Bewerbungs Homepage </title>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylessheet" href="style.css">
+
   <style>
     body {
       margin: 0;
       background-color: #0f2f48;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: #0c1856
+    }
 
+    .skillsBox {
+
+      position: relative;
+      width: 600px;
+      padding: 50px;
+      margin: 100px auto;
+    }
+
+    .skillsBox h2 {
+      margin: 0 0 20px;
+      padding: 0;
+      color: #fff;
 
 
     }
+
+    .skills {
+      position: relative;
+      width: 100%;
+      margin-bottom: 20px;
+
+    }
+
+    .progress {
+
+      width: 100px;
+      height: 20px;
+      border-radius: 10px;
+      border: 2px solid #fff;
+      text-align: center;
+      line-height: 22px;
+      color: #fff;
+      overflow: hidden;
+
+    }
+
+    .progress .precent {
+
+      text-align: right;
+      color: #fff;
+      padding-right: 10px;
+    }
+
+
 
 
 
@@ -31,7 +80,7 @@
 
 
 
-    .header {
+    header {
 
       margin: auto;
       text-align: center;
@@ -46,10 +95,11 @@
 
 
 
-    .nav {
+    nav {
       background-color: white;
       margin: auto;
       overflow: auto;
+
     }
 
     ul {
@@ -59,11 +109,11 @@
     }
 
 
-    .nav span {
+    nav span {
       float: left;
     }
 
-    .nav a:link {
+    nav a:link {
 
       text-decoration: none;
       display: block;
@@ -74,13 +124,13 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    .nav a:hover {
+    nav a:hover {
       background-color: #111e27;
       color: rgb(235, 225, 228);
     }
 
-    .nav a {
-      color: rgb(59, 141, 199)
+    nav a {
+      color: rgb(59, 141, 199) text-shadow: 3px 3px 5px black;
     }
 
     .text-block {
@@ -127,14 +177,26 @@
     .div.container {
       padding: center;
 
+
+    }
+
+    .div.container p {
+      text-shadow: 3px 3px 5px black;
     }
 
 
     .img150 {
-      float: left;
+
       width: 150px;
       padding: 5px;
       font-size: 0.7em;
+    }
+
+    .img150container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
     }
 
     footer {
@@ -152,18 +214,20 @@
     footer p {
       font-size: 22px;
       color: #111e27;
+      text-shadow: 3px 3px 5px black;
     }
 
     h2 {
+      padding-top: 50px;
       color: rgb(235, 225, 228);
-      padding-left: 100px;
       font-size: 36px;
       text-align: center;
+      text-shadow: 3px 3px 5px black;
     }
 
     .container {
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       justify-content: center;
 
 
@@ -173,7 +237,8 @@
 
       font-size: 16px;
       color: rgb(235, 243, 235);
-      font-family: Arial, Helvetica, sans-serif
+      font-family: Arial, Helvetica, sans-serif;
+      text-shadow: 3px 3px 5px black;
     }
 
     .element {
@@ -241,16 +306,13 @@
       background-color: #111e27;
       color: white;
       transform: rotateY(180deg);
-
-
-
     }
   </style>
 </head>
 <!--<div class="element">Bewerbung </div>-->
 
 <body>
-  <div class="header">
+  <header>
 
     <div class=container>
       <div class=container-left>
@@ -279,9 +341,9 @@
       </div>
 
     </div>
-  </div>
+  </header>
 
-  <div class="nav">
+  <nav>
 
 
     <span><a href="#Über Mich"> Über Mich</a></span>
@@ -289,102 +351,115 @@
     <span><a href="#Lebenslauf"> Lebenslauf</a></span>
     <span><a href="Matura Zeugnis.pdf"> Zeugnis</a></span>
     <span><a href="#Skills"> Skills</a></span>
+    <span><a href="#Hobbys"> Hobbys</a></span>
 
 
 
+  </nav>
 
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
+  <article>
 
-  <h2 id="Motivationsschreiben"></h2>
-
-  <h2>Motivationsschreiben</h2>
-
-  <p>Die Faszination an der Schnittstelle zwischen Mensch und Maschine fesselte mich schon als
-    Kind. Der erste PC den ich besaß wurde noch mit DOS betrieben. Ein Disketten sowie ein
-    Floppydisk Laufwerk waren das Highlight.</p>
-  <p>Drei Dekaden später, die Faszination ist ungebrochen, sind Disketten Geschichte und die
-    Informatik nicht mehr aus dem Leben wegzudenken. Egal ob Smart Home, CNC Fräse oder
-    schlicht das Auto, keine Maschine wäre auf diesem Niveau möglich ohne das passende
-    Datenmanagement.</p>
-  <aside>
-    <p>»Der Langsamste, der sein Ziel nicht aus den Augen verliert, geht immer noch schneller als der, der ohne Ziel
-      herumirrt.«</p>
-  </aside>
-  <p>Diese Vielfalt und Dynamik macht den Lehrgang ausgesprochen attraktiv im Bezug auf die
-    Berufswelt.</p>
-  <p>Persönlich erhoffe ich mir, die Werkzeuge und Techniken zu erlernen, den evolutionären
-    Prozess den die Informatik durchläuft, kreativ und sachlich mitzugestalten. Die Themen
-    Sicherheit, Open Source und Künstliche Intelligenz spielen in diesem Zusammenhang eine
-    besondere Rolle für mich.</p>
-  <p>Wolfgang Ertel mit seinem Werk „Grundkurs Künstliche Intelligenz“ gab mir letzten Endes den
-    Anstoß, mich für das Praktikum als Software Developer zu bewerben. Kein Bereich übt eine
-    größere Anziehungskraft auf mich aus als die KI. Die Möglichkeiten die dieses Feld bietet
-    scheinen mir nahezu grenzenlos zu sein. Ich möchte sie verstehen, begreifen und zur
-    Anwendung bringen.</p>
-
-  <p>Sie sehen es gibt viel zu tun, fangen wir am besten gleich an.</p>
-
-  <br>
-  <br>
-  <br>
-  <br>
+    <h2 id="Motivationsschreiben">Motivationsschreiben</h2>
 
 
-  <h2 id="Hobbys"></h2>
+    <p>Die Faszination an der Schnittstelle zwischen Mensch und Maschine fesselte mich schon als
+      Kind. Der erste PC den ich besaß wurde noch mit DOS betrieben. Ein Disketten sowie ein
+      Floppydisk Laufwerk waren das Highlight.</p>
+    <p>Drei Dekaden später, die Faszination ist ungebrochen, sind Disketten Geschichte und die
+      Informatik nicht mehr aus dem Leben wegzudenken. Egal ob Smart Home, CNC Fräse oder
+      schlicht das Auto, keine Maschine wäre auf diesem Niveau möglich ohne das passende
+      Datenmanagement.</p>
+    <aside>
+      <p>»Der Langsamste, der sein Ziel nicht aus den Augen verliert, geht immer noch schneller als der, der ohne Ziel
+        herumirrt.«</p>
+    </aside>
 
-  <h2>Hobbys</h2>
+    <p>Diese Vielfalt und Dynamik macht den Lehrgang ausgesprochen attraktiv im Bezug auf die
+      Berufswelt.</p>
+    <p>Persönlich erhoffe ich mir, die Werkzeuge und Techniken zu erlernen, den evolutionären
+      Prozess den die Informatik durchläuft, kreativ und sachlich mitzugestalten. Die Themen
+      Sicherheit, Open Source und Künstliche Intelligenz spielen in diesem Zusammenhang eine
+      besondere Rolle für mich.</p>
+    <p>Wolfgang Ertel mit seinem Werk „Grundkurs Künstliche Intelligenz“ gab mir letzten Endes den
+      Anstoß, mich für das Praktikum als Software Developer zu bewerben. Kein Bereich übt eine
+      größere Anziehungskraft auf mich aus als die KI. Die Möglichkeiten die dieses Feld bietet
+      scheinen mir nahezu grenzenlos zu sein. Ich möchte sie verstehen, begreifen und zur
+      Anwendung bringen.</p>
 
-  <div class="polaroid img150">
-    <img src="Tablet.jpg" alt="Tablett zum bemalen mit Kreidefarbe" style="width:100%">
+    <p>Sie sehen es gibt viel zu tun, fangen wir am besten gleich an.</p>
+  </article>
 
-    <div class="div.container">
-      <p>Tablett zum bemalen mit Kreidefarbe</p>
+  <article>
+
+    <div class="skillsBox">
+
+      <h2 id="Skills">Skills</h2>
+      <div class="skills">
+        <div class="progress">
+          <div class="percent">60%</div>
+
+        </div>
+        <div class="skills">
+          <div class="progress">
+            <div class="percent" style="width: 60%;">60%</div>
+
+          </div>
+          <h2>Html</h2>
+
+          <div class="skills">
+            <div class="progress">
+              <div class="percent" style="width: 60%;">60%</div>
+
+            </div>
+            <h2>CSS</h2>
+            <div class="skills">
+              <div class="progress">
+                <div class="percent" style="width: 60%;">60%</div>
+
+              </div>
+              <h2>Java</h2>
+
+            </div>
+
+
+          </div>
+
+  </article>
+
+  <article>
+
+    <h2 id="Hobbys">Hobbys</h2>
+
+
+    <div class="img150container">
+      <div class="polaroid img150">
+        <img src="Tablet.jpg" alt="Tablett zum bemalen mit Kreidefarbe" style="width:100%">
+
+        <div class="div.container">
+          <p>Tablett zum bemalen mit Kreidefarbe</p>
+        </div>
+      </div>
+
+      <div class="polaroid img150">
+        <img src="Beton.jpg" alt="Betonlampe" style="width:100%">
+        <div class="div.container">
+          <p>Betonlampe</p>
+        </div>
+      </div>
+
+      <div class="polaroid img150">
+        <img src="FortyEight1.jpg" alt="FortyEight1" style="width:80">
+        <div class="div.container">
+          <p>Motorrad Umbau</p>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="polaroid img150">
-    <img src="Beton.jpg" alt="Betonlampe" style="width:48%">
-    <div class="div.container">
-      <p>Betonlampe</p>
-    </div>
-  </div>
-
-  <div class="polaroid img150">
-    <img src="FortyEight1.jpg" alt="FortyEight1" style="width:60%">
-    <div class="div.container">
-      <p>Motorrad Umbau</p>
-    </div>
-  </div>
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  </article>
 
 
 
   <footer>
-    <br>
+
 
     <p> Sedat Körpe<br>
       Luciusweg20 Top19<br>
