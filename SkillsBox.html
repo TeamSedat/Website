@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title> Bewerbungs Homepage </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        body {
+
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: #0f2f48;
+        }
+
+
+        .skillsBox {
+
+            position: relative;
+            width: 600px;
+            padding: 50px;
+            margin: 100px auto;
+        }
+
+        .skillsBox h1 {
+            margin: 0 0 20px;
+            padding: 0;
+            color: #fff;
+
+
+        }
+
+        .skills h2 {
+            margin: 5px 0 0;
+            padding: 0;
+            font-size: 18px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .skills {
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px;
+
+        }
+
+
+
+
+        .progress {
+
+            width: 100px;
+            height: 20px;
+            border-radius: 10px;
+            border: 2px solid #fff;
+            text-align: center;
+            line-height: 22px;
+            color: #fff;
+            overflow: hidden;
+
+        }
+
+        .progress .percent {
+
+            text-align: right;
+            color: #fff;
+            padding-right: 10px;
+            border-right: 2px solid #fff;
+            animation: animate .5s lienar infinite;
+            background: linear-gradient(45deg, rgba(255, 255, 255, .25) 25%,
+                    transparent 25%, transparent 50%, rgba(255, 255, 255, .25) 50%, rgba(255, 255, 255, .25) 75%, transparent 75%, transparent);
+            background-size: 30px 30px;
+
+
+        }
+
+        @keyframes animate {
+
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 30px 0;
+            }
+
+        }
+
+
+        .element {
+            padding: 100px;
+            animation: pulse 4s infinite;
+            font-size: 50px;
+            text-align: center;
+
+        }
+
+
+
+        @keyframes pulse {
+            0% {
+                background-color: rgb(235, 225, 228);
+                color: #111e27;
+            }
+
+            50% {
+                background-color: #111e27;
+                color: rgb(235, 225, 228);
+            }
+
+            100% {
+                background-color: rgb(235, 225, 228);
+                color: #111e27;
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="skillsBox">
+
+        <div class="element">Skills </div>
+
+
+        <div class="skills">
+            <div class="progress">
+                <div class="percent" style="width: 60%">60%</div>
+
+            </div>
+            <h2>Html</h2>
+
+        </div>
+
+        <div class="skills">
+            <div class="progress">
+                <div class="percent" style="width: 60%">60%</div>
+
+            </div>
+            <h2>CSS</h2>
+        </div>
+
+        <div class="skills">
+            <div class="progress">
+                <div class="percent" style="width: 60%">60%</div>
+
+            </div>
+            <h2>Java</h2>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
