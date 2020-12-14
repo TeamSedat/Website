@@ -6,7 +6,7 @@
   <h2>Text field</h2>
   <p>The <strong>input type="text"</strong> defines a one-line text input field:</p>
 
-  <form action="/dokument.php">
+  <form action="test.php">
     <label for="fname">First name:</label><br>
     <input type="text" id="fname" name="fname"><br>
     <label for="lname">Last name:</label><br>
@@ -16,6 +16,45 @@
 
   <p>Note that the form itself is not visible.</p>
   <p>Also note that the default width of a text field is 20 characters.</p>
+
+  <h2>Radio Buttons</h2>
+
+  <p>The <strong>input type="radio"</strong> defines a radio button:</p>
+
+  <form action="/dokument.php">
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <h2>Checkboxes</h2>
+  <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+  <form action="/dokument.php">
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <h2>Input Button</h2>
+
+  <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+  <h2>Range Field</h2>
+
+  <p>Depending on browser support: The input type "range" can be displayed as a slider control.
+  <p>
+
+  <form action="/dokument.php" method="get">
+    <label for="vol">Volume (between 0 and 50):</label>
+    <input type="range" id="vol" name="vol" min="0" max="50">
+    <input type="submit" value="Submit">
+  </form>
 
 </body>
 
